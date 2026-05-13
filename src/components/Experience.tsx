@@ -1,14 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PORTFOLIO_DATA } from '../data/portfolio';
+import { usePortfolioData } from '../data/portfolio';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const data = usePortfolioData();
+  const { t } = useTranslation();
+
   return (
     <section id="experience" className="section">
       <div className="container">
-        <h2 className="section-title">Kinh Nghiệm</h2>
+        <h2 className="section-title">{t('experience.title')}</h2>
         <div className="timeline">
-          {PORTFOLIO_DATA.experience.map((exp, index) => {
+          {data.experience.map((exp, index) => {
             const Icon = exp.icon;
             const isHighlight = exp.role.includes('TikTok Shop US');
             

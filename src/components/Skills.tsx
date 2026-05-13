@@ -1,14 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PORTFOLIO_DATA } from '../data/portfolio';
+import { usePortfolioData } from '../data/portfolio';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+  const data = usePortfolioData();
+  const { t } = useTranslation();
+
   return (
     <section id="skills" className="section">
       <div className="container">
-        <h2 className="section-title">Kỹ Năng</h2>
+        <h2 className="section-title">{t('skills.title')}</h2>
         <div className="skills-container">
-          {PORTFOLIO_DATA.skills.map((skill, index) => (
+          {data.skills.map((skill, index) => (
             <motion.div 
               key={index} 
               className="skill-tag"

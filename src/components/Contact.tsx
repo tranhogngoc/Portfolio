@@ -1,13 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PORTFOLIO_DATA } from '../data/portfolio';
+import { usePortfolioData } from '../data/portfolio';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const data = usePortfolioData();
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="section">
       <div className="container">
-        <h2 className="section-title">Liên Hệ</h2>
+        <h2 className="section-title">{t('contact.title')}</h2>
         <div className="contact-grid">
           <motion.div 
             className="contact-info"
@@ -22,7 +26,7 @@ const Contact = () => {
               </div>
               <div className="contact-details">
                 <h4>Email</h4>
-                <p>{PORTFOLIO_DATA.email}</p>
+                <p>{data.email}</p>
               </div>
             </div>
             
@@ -31,8 +35,8 @@ const Contact = () => {
                 <Phone size={24} />
               </div>
               <div className="contact-details">
-                <h4>Số điện thoại</h4>
-                <p>{PORTFOLIO_DATA.phone}</p>
+                <h4>{t('contact.phone')}</h4>
+                <p>{data.phone}</p>
               </div>
             </div>
             
@@ -41,8 +45,8 @@ const Contact = () => {
                 <MapPin size={24} />
               </div>
               <div className="contact-details">
-                <h4>Địa chỉ</h4>
-                <p>{PORTFOLIO_DATA.location}</p>
+                <h4>{t('contact.location')}</h4>
+                <p>{data.location}</p>
               </div>
             </div>
 
@@ -52,7 +56,7 @@ const Contact = () => {
               </div>
               <div className="contact-details">
                 <h4>Behance</h4>
-                <p><a href={`https://${PORTFOLIO_DATA.behance}`} target="_blank" rel="noreferrer">{PORTFOLIO_DATA.behance}</a></p>
+                <p><a href={`https://${data.behance}`} target="_blank" rel="noreferrer">{data.behance}</a></p>
               </div>
             </div>
           </motion.div>
@@ -66,19 +70,19 @@ const Contact = () => {
           >
             <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
               <div className="form-group">
-                <label htmlFor="name">Tên của bạn</label>
-                <input type="text" id="name" className="form-control" placeholder="Nhập tên của bạn" />
+                <label htmlFor="name">{t('contact.name')}</label>
+                <input type="text" id="name" className="form-control" placeholder={t('contact.name')} />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" className="form-control" placeholder="Nhập email của bạn" />
+                <label htmlFor="email">{t('contact.email')}</label>
+                <input type="email" id="email" className="form-control" placeholder={t('contact.email')} />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Tin nhắn</label>
-                <textarea id="message" className="form-control" placeholder="Nội dung tin nhắn..."></textarea>
+                <label htmlFor="message">{t('contact.message')}</label>
+                <textarea id="message" className="form-control" placeholder={t('contact.message')}></textarea>
               </div>
               <button type="submit" className="btn btn-primary">
-                <Send size={20} /> Gửi tin nhắn
+                <Send size={20} /> {t('contact.send')}
               </button>
             </form>
           </motion.div>
@@ -86,7 +90,7 @@ const Contact = () => {
       </div>
       
       <footer className="footer">
-        <p>© {new Date().getFullYear()} {PORTFOLIO_DATA.name}. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} {data.name}. All rights reserved.</p>
       </footer>
     </section>
   );

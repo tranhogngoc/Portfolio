@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { PORTFOLIO_DATA } from '../data/portfolio';
+import { usePortfolioData } from '../data/portfolio';
+import { useTranslation } from 'react-i18next';
 
 const Counter = ({ value, prefix, suffix }: { value: string; prefix: string; suffix: string }) => {
   const [count, setCount] = useState(0);
@@ -36,12 +37,15 @@ const Counter = ({ value, prefix, suffix }: { value: string; prefix: string; suf
 };
 
 const Achievements = () => {
+  const data = usePortfolioData();
+  const { t } = useTranslation();
+
   return (
     <section id="achievements" className="section">
       <div className="container">
-        <h2 className="section-title">Thành Tựu</h2>
+        <h2 className="section-title">{t('achievements.title')}</h2>
         <div className="achievements-grid">
-          {PORTFOLIO_DATA.achievements.map((item, index) => {
+          {data.achievements.map((item, index) => {
             const Icon = item.icon;
             return (
               <motion.div 

@@ -1,9 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PORTFOLIO_DATA } from '../data/portfolio';
+import { usePortfolioData } from '../data/portfolio';
 import { Download, Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const data = usePortfolioData();
+  const { t } = useTranslation();
+
   return (
     <section id="hero" className="hero">
       <div className="hero-bg-glow"></div>
@@ -14,17 +18,17 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-gradient">Xin chào, mình là<br />{PORTFOLIO_DATA.name}</h1>
+          <h1 className="text-gradient">{t('hero.greeting')}<br />{data.name}</h1>
           <h2 className="hero-subtitle text-gradient-tiktok">
-            {PORTFOLIO_DATA.role.split(' | ')[0]}
+            {data.role.split(' | ')[0]}
           </h2>
-          <p className="hero-desc">{PORTFOLIO_DATA.about}</p>
+          <p className="hero-desc">{data.about}</p>
           <div className="hero-actions">
             <a href="#contact" className="btn btn-primary">
-              <Mail size={20} /> Liên hệ ngay
+              <Mail size={20} /> {t('hero.contact')}
             </a>
             <a href="#" className="btn btn-outline">
-              <Download size={20} /> Tải CV
+              <Download size={20} /> {t('hero.download')}
             </a>
           </div>
         </motion.div>
@@ -37,7 +41,7 @@ const Hero = () => {
         >
           <div className="hero-image-wrapper">
             <div className="hero-image-placeholder">
-              <span>Ảnh Chân Dung</span>
+              <span>{t('hero.image')}</span>
             </div>
           </div>
         </motion.div>
