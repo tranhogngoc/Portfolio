@@ -27,7 +27,7 @@ const Hero = () => {
             <a href="#contact" className="btn btn-primary">
               <Mail size={20} /> {t('hero.contact')}
             </a>
-            <a href="#" className="btn btn-outline">
+            <a href={`${import.meta.env.BASE_URL}Tran_Hong_Ngoc_CV.pdf`} download="Tran_Hong_Ngoc_CV.pdf" className="btn btn-outline">
               <Download size={20} /> {t('hero.download')}
             </a>
           </div>

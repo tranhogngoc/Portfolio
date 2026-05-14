@@ -695,3 +695,30 @@ textarea.form-control {
   margin-top: 4rem;
   color: var(--color-text-muted);
 }
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .btn, .navbar, .contact-form {
+    display: none !important;
+  }
+  .text-gradient, .text-gradient-tiktok {
+    -webkit-text-fill-color: black;
+    background-clip: text;
+    color: black;
+  }
+  .glass, .card {
+    background: transparent !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    color: black !important;
+  }
+  .hero-bg-glow {
+    display: none;
+  }
+  h1, h2, h3, h4, p, span {
+    color: black !important;
+  }
+}
