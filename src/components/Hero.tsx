@@ -12,7 +12,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-bg-glow"></div>
       <div className="container hero-container">
-        <motion.div 
+        <motion.div
           className="hero-content"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,17 +32,15 @@ const Hero = () => {
             </a>
           </div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="hero-image"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="hero-image-wrapper">
-            <div className="hero-image-placeholder">
-              <span>{t('hero.image')}</span>
-            </div>
+            <img src={`${import.meta.env.BASE_URL}avatar_1.png`} alt="Avatar" className="hero-image-content" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
         </motion.div>
       </div>

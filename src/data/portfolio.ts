@@ -1,4 +1,4 @@
-import { Brain, Briefcase, Code, FileVideo, Layout, LineChart, Mail, MapPin, Palette, Phone, ShoppingBag, Store, TrendingUp } from "lucide-react";
+import { Brain, Briefcase, Code, FileVideo, Gamepad2, Layout, LineChart, Mail, MapPin, Palette, Phone, ShoppingBag, Store, TrendingUp } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 
 export const PORTFOLIO_DATA_VI = {
@@ -8,24 +8,38 @@ export const PORTFOLIO_DATA_VI = {
   phone: "+84 0349216247",
   behance: "behance.net/ngoctran139",
   location: "Đà Nẵng, Việt Nam",
-  about: "Mình là Ngọc, mình có cơ hội được đồng hành và phát triển trong môi trường sáng tạo từ năm 2021. Với mong muốn khai phá giới hạn bản thân bằng những kiến thức và kỹ năng được rèn giũa, và mong muốn sử dụng kỹ năng được đào tạo để làm việc trong môi trường chuyên nghiệp giúp mình thể hiện được hết bản thân. Hiện tại, mình đang tập trung phát triển mạnh mẽ trong lĩnh vực thương mại điện tử với vai trò Seller TikTok Shop US.",
+  about: "Mình là Ngọc, đã có cơ hội học hỏi và phát triển trong môi trường sáng tạo từ năm 2021. Với tinh thần cầu tiến, chăm chỉ và luôn sẵn sàng tiếp thu, mình không ngừng rèn luyện kiến thức, kỹ năng để hoàn thiện bản thân và đóng góp tốt hơn trong môi trường làm việc chuyên nghiệp. Hiện tại, mình đang tập trung phát triển trong lĩnh vực thương mại điện tử với vai trò Seller trên TikTok Shop US. Mình có kinh nghiệm xây dựng nội dung, vận hành gian hàng và tối ưu hiệu suất bán hàng nhằm tăng trưởng doanh thu trên TikTok Shop.",
   education: [
     {
-      period: "2021 - Hiện tại",
+      period: "2021 - 2024",
       school: "Cao đẳng FPT Polytechnic Đà Nẵng",
       degree: "Thiết kế đồ họa - Mỹ thuật đa phương tiện (Graphic Design)",
     }
   ],
   experience: [
     {
-      period: "02/01/2025 - Hiện tại",
-      role: "Seller TikTok Shop US",
-      company: "TikTok Shop",
-      description: "Vận hành, quản lý cửa hàng trên TikTok Shop thị trường US. Phân tích xu hướng, tối ưu hóa sản phẩm và lên chiến dịch bán hàng.",
+      period: "06/2025 - Hiện tại",
+      role: "TikTok Shop Team Lead",
+      company: "Bug Media",
+      description: "Quản lý và vận hành gian hàng trên TikTok, đồng thời dẫn dắt và phân công công việc cho đội nhóm sản xuất nội dung và bán hàng. Xây dựng chiến lược nội dung, tối ưu hiệu suất team nhằm tăng trưởng doanh thu và tỷ lệ chuyển đổi trên TikTok Shop.",
       icon: ShoppingBag,
     },
     {
-      period: "2021 - Hiện tại",
+      period: "01/2025 - 06/2025",
+      role: "TikTok Shop Seller",
+      company: "Bug Media",
+      description: "Quản lý và vận hành gian hàng trên TikTok, xây dựng nội dung video và livestream để quảng bá sản phẩm. Tối ưu hiệu suất bán hàng thông qua việc tăng tương tác, chuyển đổi và quản lý đơn hàng trên TikTok Shop.",
+      icon: ShoppingBag,
+    },
+    {
+      period: "01/2024 - 12/2025",
+      role: "Game QA & LiveOps Executive",
+      company: "Bug Media",
+      description: "Thực hiện kiểm thử game (functional, gameplay, regression), phát hiện và theo dõi lỗi nhằm đảm bảo chất lượng sản phẩm trước và sau khi phát hành. Vận hành game (LiveOps) thông qua quản lý sự kiện, theo dõi dữ liệu người dùng và tối ưu trải nghiệm để tăng retention và doanh thu.",
+      icon: Gamepad2,
+    },
+    {
+      period: "2021 - 2024",
       role: "Freelancer (Graphic Design & Video Editing)",
       company: "Tự do",
       description: "Nhận các dự án thiết kế online: Social media post, Background, Backdrop Events. Chỉnh sửa video bóng đá (Football Content Editor).",
@@ -35,23 +49,23 @@ export const PORTFOLIO_DATA_VI = {
   achievements: [
     {
       title: "Doanh thu",
-      value: "10000",
+      value: "220000",
       prefix: "$",
       suffix: "+",
-      description: "Trên TikTok Shop US trong 3 tháng đầu",
+      description: "Trên TikTok Shop US trong 1 năm đầu",
       icon: TrendingUp,
     },
     {
       title: "Người theo dõi",
-      value: "50000",
+      value: "15000",
       prefix: "",
       suffix: "+",
-      description: "Kênh TikTok thể thao tự xây dựng",
+      description: "Kênh TikTok bán áo 2d tự xây dựng",
       icon: Store,
     },
     {
       title: "Tỷ lệ chuyển đổi",
-      value: "15",
+      value: "10",
       prefix: "",
       suffix: "%",
       description: "Tỷ lệ chuyển đổi trung bình qua video short",
@@ -59,7 +73,7 @@ export const PORTFOLIO_DATA_VI = {
     },
     {
       title: "Dự án Thiết kế",
-      value: "50",
+      value: "3000",
       prefix: "",
       suffix: "+",
       description: "Dự án Freelance đã hoàn thành",
@@ -67,77 +81,89 @@ export const PORTFOLIO_DATA_VI = {
     }
   ],
   skills: [
-    { name: "Photoshop (Ps)", category: "Design" },
-    { name: "Illustrator (Ai)", category: "Design" },
-    { name: "After Effects (Ae)", category: "Video" },
-    { name: "Premiere Pro (Pr)", category: "Video" },
-    { name: "InDesign (Id)", category: "Design" },
-    { name: "CapCut", category: "Video" },
     { name: "Phân tích xu hướng TikTok", category: "Sale" },
     { name: "Vận hành TikTok Shop", category: "Sale" },
-    { name: "Sáng tạo nội dung (Content Idea)", category: "Content" }
-  ]
+    { name: "Sáng tạo nội dung (Content Idea)", category: "Content" },
+    { name: "Photoshop (Ps)", category: "Design" },
+    { name: "Illustrator (Ai)", category: "Design" },
+    { name: "CapCut", category: "Video" },
+    
+  ]  
 };
 
 export const PORTFOLIO_DATA_EN = {
   name: "Tran Hong Ngoc",
-  role: "US TikTok Shop Seller | Content Editor | Graphic Designer",
+  role: "TikTok Shop US Seller | Content Editor | Graphic Designer",
   email: "ngoc10012004@gmail.com",
   phone: "+84 0349216247",
   behance: "behance.net/ngoctran139",
   location: "Da Nang, Vietnam",
-  about: "I am Ngoc. I have had the opportunity to accompany and develop in a creative environment since 2021. With a desire to break my limits through honed knowledge and skills, and aiming to use trained abilities in a professional environment to express myself fully. Currently, I am strongly focusing on e-commerce as a US TikTok Shop Seller.",
+  about: "I am Ngoc, having had the opportunity to learn and develop in a creative environment since 2021. With a progressive, hardworking spirit and always ready to learn, I constantly hone my knowledge and skills to improve myself and contribute better in a professional working environment. Currently, I am focusing on developing in the e-commerce field as a Seller on US TikTok Shop. I have experience in content creation, store operation, and sales performance optimization to increase revenue on TikTok Shop.",
   education: [
     {
-      period: "2021 - Present",
+      period: "2021 - 2024",
       school: "FPT Polytechnic College Da Nang",
       degree: "Graphic Design - Multimedia",
     }
   ],
   experience: [
     {
-      period: "02/01/2025 - Present",
-      role: "US TikTok Shop Seller",
-      company: "TikTok Shop",
-      description: "Operating and managing stores on the US TikTok Shop. Analyzing trends, optimizing products, and planning sales campaigns.",
+      period: "06/2025 - Present",
+      role: "TikTok Shop Team Lead",
+      company: "Bug Media",
+      description: "Managing and operating TikTok stores, while leading and assigning tasks for the content production and sales team. Building content strategies, optimizing team performance to increase revenue and conversion rates on TikTok Shop.",
       icon: ShoppingBag,
     },
     {
-      period: "2021 - Present",
+      period: "01/2025 - 06/2025",
+      role: "TikTok Shop Seller",
+      company: "Bug Media",
+      description: "Managing and operating TikTok stores, creating video content and livestreams to promote products. Optimizing sales performance by increasing interaction, conversion, and managing orders on TikTok Shop.",
+      icon: ShoppingBag,
+    },
+    {
+      period: "01/2024 - 12/2025",
+      role: "Game QA & LiveOps Executive",
+      company: "Bug Media",
+      description: "Performing game testing (functional, gameplay, regression), detecting and tracking bugs to ensure product quality before and after release. Operating games (LiveOps) through event management, tracking user data, and optimizing experience to increase retention and revenue.",
+      icon: Gamepad2,
+    },
+    {
+      period: "2021 - 2024",
       role: "Freelancer (Graphic Design & Video Editing)",
       company: "Freelance",
-      description: "Taking online design projects: Social media posts, Backgrounds, Event Backdrops. Football Video Editing (Football Content Editor).",
+      description: "Taking online design projects: Social media posts, Backgrounds, Event Backdrops. Editing football videos (Football Content Editor).",
       icon: Palette,
     }
   ],
   achievements: [
     {
       title: "Revenue",
-      value: "10000",
+      value: "220000",
       prefix: "$",
       suffix: "+",
-      description: "On US TikTok Shop in the first 3 months",
+      description: "On US TikTok Shop in the first year",
       icon: TrendingUp,
     },
     {
       title: "Followers",
-      value: "50000",
+      value: "15000",
       prefix: "",
       suffix: "+",
-      description: "Self-built sports TikTok channel",
+      description: "Self-built 2D shirt selling TikTok channel",
       icon: Store,
     },
     {
       title: "Conversion Rate",
-      value: "15",
+      value: "10",
       prefix: "",
       suffix: "%",
-      description: "Average conversion rate via shorts",
+      description: "Average conversion rate via short videos",
       icon: LineChart,
     },
     {
       title: "Design Projects",
-      value: "50",
+      value: "3000",
       prefix: "",
       suffix: "+",
       description: "Completed freelance projects",
@@ -145,15 +171,12 @@ export const PORTFOLIO_DATA_EN = {
     }
   ],
   skills: [
-    { name: "Photoshop (Ps)", category: "Design" },
-    { name: "Illustrator (Ai)", category: "Design" },
-    { name: "After Effects (Ae)", category: "Video" },
-    { name: "Premiere Pro (Pr)", category: "Video" },
-    { name: "InDesign (Id)", category: "Design" },
-    { name: "CapCut", category: "Video" },
     { name: "TikTok Trend Analysis", category: "Sale" },
     { name: "TikTok Shop Operation", category: "Sale" },
-    { name: "Content Creation (Idea)", category: "Content" }
+    { name: "Content Creation (Idea)", category: "Content" },
+    { name: "Photoshop (Ps)", category: "Design" },
+    { name: "Illustrator (Ai)", category: "Design" },
+    { name: "CapCut", category: "Video" },
   ]
 };
 
