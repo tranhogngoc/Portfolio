@@ -29,7 +29,29 @@ const resources = {
         title: "Kinh Nghiệm"
       },
       achievements: {
-        title: "Thành Tựu"
+        title: "Thành Tựu",
+        showcaseTitle: "Minh Chứng Kết Quả Thực Tế",
+        showcaseSubtitle: "Dashboard doanh thu & chỉ số vận hành trên TikTok Shop US",
+        clickToEnlarge: "Nhấp để phóng to ảnh",
+        prev: "Ảnh trước",
+        next: "Ảnh sau",
+        play: "Tự động chuyển",
+        pause: "Tạm dừng",
+        close: "Đóng",
+        slides: [
+          {
+            title: "Báo cáo Doanh thu & Tăng trưởng TikTok Shop US",
+            desc: "Hiệu suất doanh thu thực tế và chỉ số bán hàng tăng trưởng ấn tượng."
+          },
+          {
+            title: "Quản lý Đơn hàng & Hiệu suất Vận hành",
+            desc: "Theo dõi dữ liệu chuyển đổi, số lượng đơn hàng và chỉ số chất lượng gian hàng."
+          },
+          {
+            title: "Chiến dịch Bán hàng & Doanh số Đột phá",
+            desc: "Tối ưu hóa video ngắn và livestream thu hút tương tác và bứt phá doanh thu."
+          }
+        ]
       },
       skills: {
         title: "Kỹ Năng Nổi Bật",
@@ -79,7 +101,29 @@ const resources = {
         title: "Experience"
       },
       achievements: {
-        title: "Achievements"
+        title: "Achievements",
+        showcaseTitle: "Live Results & Revenue Evidence",
+        showcaseSubtitle: "Revenue dashboards & operational metrics on US TikTok Shop",
+        clickToEnlarge: "Click to enlarge image",
+        prev: "Previous slide",
+        next: "Next slide",
+        play: "Play slideshow",
+        pause: "Pause slideshow",
+        close: "Close",
+        slides: [
+          {
+            title: "US TikTok Shop Revenue & Growth Report",
+            desc: "Actual revenue performance and strong sales growth metrics."
+          },
+          {
+            title: "Order Management & Store Operations",
+            desc: "Conversion tracking, order fulfillment volume, and store health ratings."
+          },
+          {
+            title: "Sales Campaigns & Peak Revenue Results",
+            desc: "Optimized short video & livestream strategies driving breakthrough retail sales."
+          }
+        ]
       },
       skills: {
         title: "Featured Skills",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { usePortfolioData } from '../data/portfolio';
-import { Download, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
@@ -26,9 +26,6 @@ const Hero = () => {
           <div className="hero-actions">
             <a href="#contact" className="btn btn-primary">
               <Mail size={20} /> {t('hero.contact')}
-            </a>
-            <a href={`${import.meta.env.BASE_URL}Tran_Hong_Ngoc_CV.pdf`} download="Tran_Hong_Ngoc_CV.pdf" className="btn btn-outline">
-              <Download size={20} /> {t('hero.download')}
             </a>
           </div>
         </motion.div>
